@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.287);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  max-width: 400px;
+  border: 3px solid black;
+  padding: 1%;
+  height: 100vh;
+}
+
+.wrapper p {
+  font-size: 30px;
+  grid-column: 1/4;
+  text-align: center;
+}
+
+.buttons, .buttons_info, .buttons_minus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100px;
+}
+
+.buttons div {
+  display: flex;
+  width: 100%;
+  background-color: rgb(42, 76, 65);
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 40px;
+  justify-content: center;
+}
+
+.buttons_info div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid black; */
+  font-size: 25px;
+  justify-content: center;
+  color: black;
+  height: 40px;
+}
+
+.buttons_minus div {
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.459);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  justify-content: center;
+  color: black;
+  height: 40px;
+}
+
+.enter {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  align-items: center;
+  font-size: 40px;
+}
